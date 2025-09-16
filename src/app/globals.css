@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@font-face {
+  font-family: "Work-Sans";
+  src: url("/fonts/WorkSans-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@theme inline {
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--font-sans: var(--font-geist-sans);
+	--font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+body {
+	background: var(--background);
+	color: var(--foreground);
+	font-family: Arial, Helvetica, sans-serif, "Work-Sans", sans-serif;
+}
+.Work-Sans{
+	  font-family: "Work Sans", sans-serif;
+}
+.bggradientImg {
+	background: url("../../public/assets/images/Background+VerticalBorder.png")
+			center/cover no-repeat,
+		black;
+}
+.bggradientRight {
+	background: url("../../public/assets/images/OverlayBlurRight.png")
+			center/cover no-repeat,
+		black;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); } 
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+.btn-register {
+  background: 
+    linear-gradient(90deg, rgba(209, 154, 54, 0) 66%, rgba(209, 154, 54, 0.5) 100%),
+    linear-gradient(270deg, rgba(209, 154, 54, 0) 71%, rgba(209, 154, 54, 0.5) 100%),
+    linear-gradient(0deg, #fff, #fff);
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+  }
+}
+
+.btn-glow:hover {
+  animation: glow 1.5s infinite alternate;
+}
+
+
+.bg-gradient-button {
+  background: linear-gradient(to right, #1E1C18, #2C2518);
+}
+.bg-gradient-brown {
+  background: linear-gradient(to right, #30281A, #3C311C);
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+.feature-card {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+.feature-icon {
+  transition: transform 0.3s ease;
+}
+.feature-card:hover .feature-icon {
+  transform: scale(1.15) rotate(-3deg);
+}
+@media (max-width: 768px) {
+  body {
+    background: url("../../public/assets/images/Background+VerticalBorder.png")
+			right/cover no-repeat,
+		black;
+  }
+  .bggradientImg{
+    background: transparent;
+  }
+}
