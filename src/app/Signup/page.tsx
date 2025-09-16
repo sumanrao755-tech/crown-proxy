@@ -8,7 +8,7 @@ export default function Home() {
                 <div className="mb-8">
                     <h1 className="text-2xl font-bold flex items-center gap-2">
                         <img
-  src="/assets/images/brand_logo.svg"
+  src="/assets/images/brand_logo.png"
   alt="Crown Proxy Logo"
   className="h-12 w-auto sm:h-16"
 />
