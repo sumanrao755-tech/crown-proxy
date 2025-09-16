@@ -7,15 +7,11 @@ export default function Home() {
             <div className="w-full md:w-1/2 bggradientImg items-center flex flex-col justify-center bg-black px-6 sm:px-12 md:px-16 py-12 text-white">
                 <div className="mb-8">
                     <h1 className="text-2xl font-bold flex items-center gap-2">
-                        <Image
-                            src="/assets/images/brand_logo.svg"
-                            alt="Crown Proxy Logo"
-                            width={100}
-                            height={100}
-                            className=""
-                            priority
-                            unoptimized
-                        />
+                        <img
+  src="/assets/images/brand_logo.svg"
+  alt="Crown Proxy Logo"
+  className="h-12 w-auto sm:h-16"
+/>
                     </h1>
                 </div>
 
