@@ -14,6 +14,7 @@ export default function Home() {
                             height={100}
                             className=""
                             priority
+                            unoptimized
                         />
                     </h1>
                 </div>
